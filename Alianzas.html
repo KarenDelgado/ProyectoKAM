@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ALIANZAS :: Kam Desmaquillante</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<link rel="stylesheet" href="css/Formato.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/Archivo.js"></script>
+</head>
+<body onload="displayDate();">
+    <header>
+        <div class="container">
+            <div class="name"> <img class="logo" src="img/Logo1.png"> &nbsp; <strong> KAM BEAUTY</strong></div>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="Inicio.html"><i class="fa fa-home"></i> INICIO</a></li>
+                <li><a href="Productos.html"><i class="fa fa-shopping-bag"></i> PRODUCTOS</a></li>
+                <li><a href="Contacto.html"><i class="fa fa-envelope"></i> CONTACTO</a></li>
+                <li><a href="Nosotros.html"><i class="fa fa-info"></i> SOBRE NOSOTROS</a></li>
+                <li><a id="actual" href="Alianzas.html"><i class="fa fa-handshake-o"></i> ALIANZAS</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+
+    <div class="alianza">
+        <br><br><br>
+        <h1>ALIANZAS</h1>
+        <p class="pAlianzaFrase">Conoce las marcas asociadas con nosotras, ¡TE ENCANTARAN!</p><br>
+
+        <div class="row">
+            <div class="alinear">
+            <div class="parte1">
+                <img src="img/Alianza 1.jpg" class="fotoInicial">
+            </div>
+            <div class="parte2">
+                <h2 class="h2Ingredientes">TEFRAI</h2>
+                <p class="pAlianza">Productos enfocados en el cuidado y limpieza de articulos de belleza, asi como en el cuidado personal, llevan sus productos a los estados de Puebla y Tlaxcala.</p>
+                <input type="button" class="boton2" value="Visitar Tefrai" role="link" onclick="window.location='http://minthair.000webhostapp.com/'">
+            </div>
+            </div>
+        </div><br><br><hr><br><br>
+
+        <div class="row">
+            <div class="alinear">
+            <div class="parte1">
+                <img src="img/Alianza 2.jpg" class="fotoInicial">
+            </div>
+            <div class="parte2">
+                <h2 class="h2Ingredientes">EOS</h2>
+                <p class="pAlianza">Balsamo labial 100% natural y organico, que proteje y da suavidad a tus labios.</p>
+                <input type="button" class="boton2" value="Visitar Eos" role="link" onclick="window.location='https://www.eosproducts.mx/'">
+            </div>
+            </div>
+        </div><br><br><hr><br><br>
+
+        <div class="row">
+            <div class="alinear">
+            <div class="parte1">
+                <img src="img/Alianza 3.jpg" class="fotoInicial">
+            </div>
+            <div class="parte2">
+                <h2 class="h2Ingredientes">GRISI</h2>
+                <p class="pAlianza">Empresa químico farmacéutica 100% mexicana dedicada a la elaboración y comercialización de productos líderes de origen natural para la salud, belleza, higiene y nutrición.</p>
+                <input type="button" class="boton2" value="Visitar Grisi" role="link" onclick="window.location='https://www.grisi.com/'">
+            </div>
+            </div>
+        </div><br><br>
+
+    </div>
+
+
+    <div class="footer">
+  		<h1>KAM BEAUTY</h1>
+        <h2>Porque belleza es salud.</h2>
+        <h2 id="fecha">La fecha es:</h2>
+ 	</div>
+</body>
+</html>
