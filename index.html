@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INICIO :: Kam Desmaquillante</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<link rel="stylesheet" href="css/Formato.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="js/Archivo.js"></script>
+</head>
+<body onload="displayDate();">
+    <header>
+        <div class="container">
+            <div class="name"> <img class="logo" src="img/Logo1.png"> &nbsp; <strong> KAM BEAUTY</strong></div>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a id="actual" href="index.html"><i class="fa fa-home"></i> INICIO</a></li>
+                <li><a href="Productos.html"><i class="fa fa-shopping-bag"></i> PRODUCTOS</a></li>
+                <li><a href="Contacto.html"><i class="fa fa-envelope"></i> CONTACTO</a></li>
+                <li><a href="Nosotros.html"><i class="fa fa-info"></i> SOBRE NOSOTROS</a></li>
+                <li><a href="Alianzas.html"><i class="fa fa-handshake-o"></i> ALIANZAS</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+
+    <div class="presentacion"><br>
+        <div class="row">
+        <div class="alinear">
+        <div class="parte1">
+            <h1 class="h1Inicio">Desmaquillante</h1>
+            <p class="pInicio">Un producto ideal para cuidar tu piel mientras la hidratras.</p>
+            <input type="button" class="boton1" value="Conocer más" role="link" onclick="window.location='Productos.html'">
+        </div>
+        <div class="parte2">
+            <img src="img/Producto 1.jpg" class="fotoInicial">
+        </div>
+        </div>
+        </div><br><br>
+    </div>
+
+    <div class="ingredientes"><br><br>
+        <div class="row">
+        <div class="alinear">
+        <div class="parte1">
+            <img src="img/ingredientes.jpg" class="fotoInicial">
+        </div>
+        <div class="parte2">
+            <h2 class="h2Ingredientes">Cuidamos tu piel con los mejores ingredientes</h2>
+            <input type="button" value="Ver sobre Nosotros" role="link" onclick="window.location='Nosotros.html'">
+        </div>
+        </div>
+        </div><br><br>
+    </div>
+
+    <div class="carrusel">
+    	<br><h2 class="h2Ingredientes">Los productos más populares</h2>
+        <div class="centrar">
+        <div id="col-1" class="gallery">
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" id="fotos" src="img/Producto 1.jpg">
+                <img class="mySlides" id="fotos" src="img/Producto 3.jpg">
+                <img class="mySlides" id="fotos" src="img/Producto 5.jpg">
+                <img class="mySlides" id="fotos" src="img/Producto 9.jpg"><br>
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button id="centinela" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+           </div>
+       </div>
+       </div>
+       <input type="button" value="Ver más Productos" role="link" onclick="window.location='Productos.html'"><br><br>
+    	<div class="clearfix"></div>
+    </div>
+    <div class="footer">
+  		<h1>KAM BEAUTY</h1>
+  		<h2>Porque belleza es salud.</h2>
+        <h2 id="fecha">La fecha es:</h2>
+ 	</div>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);</script>
+</body>
+</html>
