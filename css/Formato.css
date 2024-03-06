@@ -1,0 +1,513 @@
+body{
+    background: #f0f8ea;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+h1, h2{
+  margin-top: 0;
+  font-family: serif;
+  font-weight: 400;
+}
+p{
+  margin: 1.5em;
+  text-align: justify;
+  font-size: 1.1em;
+}
+hr{
+  margin: 0px 5%;
+  color: #bdc1bd;
+} 
+iframe{
+  width: 20em;
+  height: 11em;
+  border: none;
+  margin: 0px auto;
+}
+header{
+    background: black;
+    color: #ebebd3;
+    padding: 1.3em 0;
+    position: relative;
+}
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#fecha{
+  background-color: #514f53;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+.marca{
+  float: left;
+  height: 1em;
+}
+.container{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+#actual{
+  color: white;
+}
+.logo{
+  width: 1.2em;
+  float: left;
+  align-content: center;
+}
+.name{
+    float: left;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-family: sans-serif;
+    letter-spacing: 1mm;
+    display: inline-block;
+    align-content: center;
+}
+.name span{
+    font-weight: 300;
+}
+.footer {
+  background-color: #514f53;
+  color: white;
+  padding: 15px;
+  font-size: .5em;
+  text-align: center;
+  font-weight: bolder;
+}
+.site-nav{
+    top:90%;
+    right:0;
+    position: absolute;
+    background: #d2addc;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+}
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #575766;
+    align-content: center;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+}
+.site-nav a{
+    color: grey;
+    display: block;
+    padding: 1.5em 2.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-content: center;
+}
+.site-nav a:hover,
+.site-nav a:focus, 
+.site-nav i:hover,
+.site-nav i:focus{
+    background: black;
+    color: white;
+}
+.menu-toggle{
+    padding: 1em;
+    position: absolute;
+    top: 1em;
+    right: .5em; 
+}
+.menu-open .hamburger{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+    opacity: 0;
+}
+.menu-open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: white;
+    height: 4px;
+    width: 2.25em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
+
+/*Pagina Inicio.hmtl*/
+.presentacion{
+  background: url(../img/Estrellas2.jpg);
+  color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.ingredientes{
+  background: #fbdaff;
+  color: black;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.parte1{
+  float: none;
+  width: 90%;
+  margin-top: 6px;
+}
+.parte2{
+  float: none;
+  width: 90%;
+  margin-top: 6px;
+}
+.fotoInicial{
+  width: 100%;
+  height: auto;
+}
+.alinear{
+  width: 90%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+.pInicio{
+  text-align: center;
+}
+input[type=button].boton1{
+  border: 1px solid white;
+  color: white;
+}
+.carrusel{
+  width: 100%;
+  background: #b8f9fa;
+  margin: 0;
+  text-align: center;
+}
+.centrar{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#col-1{
+  width: 80%;
+}
+[id*="col-"] {
+  float: left;
+  padding: 5px;
+}
+div.gallery img {
+  width: 80%;
+  height: auto;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.mySlides{
+  display:none;
+}
+#fotos{
+  width: 100%;
+}
+
+/*Pagina Productos.html*/
+.producto{
+  background: #cbfeec;
+  color: black;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.pProductoEncabezado{
+  text-align: center;
+  color: #4c4f4c;
+  margin: 0;
+  padding: 3px;
+  color: #4c4f4c;
+}
+.pProducto{
+  text-align: justify;
+  color: #4c4f4c;
+  margin: 0;
+  padding: 3.2px;
+  color: #4c4f4c;
+}
+
+hr.linea{
+  color: grey;
+}
+/*Pagina Contacto.html*/
+.contactoEncabezado{
+  background: #e8d2f0;
+  text-align: center;
+  margin: 0;
+}
+.formulario{
+  text-align: left;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type=text], select, input[type=email],textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 80%;
+  background-color: transparent;
+  font-family: sans-serif;
+}
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus{
+  background-color: #bbffc5;
+}
+label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+  font-size: 70%;
+  text-transform: uppercase;
+  color: black;
+}
+span{
+  color:red;
+  font-size: 65%;
+  text-transform: uppercase;
+}
+input[type=submit],input[type=reset], input[type=button] {
+  background-color: transparent;
+  color: black;
+  padding: 14px 40px;
+  border: 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 65%;
+}
+input[type=submit]:hover, input[type=button]:hover{
+  background-color: #c387ea;
+}
+.col-25 {
+  float: left;
+  width: 35%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.pContacto{
+  text-align: justify;
+  color: #4c4f4c;
+  margin: 0;
+  padding: 3px;
+}
+.pVisitanos{
+  text-align: center;
+  color: #4c4f4c;
+  margin: 0;
+  padding: 3px;
+}
+/*Pagina Nosotros.html*/
+.nosotrosEncabezado{
+  background: #caf8b6;
+  text-align: center;
+  margin: 0;
+}
+.imgEquipo{ 
+  width: 70%;
+}
+.pNosotros{
+  color: #4c4f4c;
+}
+
+/*Pagina Alianzas.hmtl*/
+.alianza{
+  background: #ffedc8;
+  color: black;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.pAlianzaFrase{
+  text-align: center;
+  color: #4c4f4c;
+  margin: 0;
+  padding: 3px;
+  color: #4c4f4c;
+}
+.pAlianza{
+  text-align: justify;
+  color: #4c4f4c;
+  margin: 0;
+  padding: 3px;
+  color: #4c4f4c;
+}
+input[type=button].boton2{
+  border: 1px solid grey;
+  color: grey;
+}
+
+@media screen and (min-width:760px){
+  .parte1{
+    width: 50%;
+    float: left;
+  }
+  .parte2{
+    width: 40%;
+    float: left;
+  }
+  .fotoInicial{
+    width: 19em;
+    height: auto;
+  }
+  .centrar{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #col-1{
+    width: 80%;
+  }
+  .alinear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .h1Inicio{
+    font-size: 3.2em;
+  }
+  .h2Ingredientes{
+    font-size: 2.5em;
+  }
+  .h2Ingredientes{
+    font-size: 1.8em;
+  }
+  .pInicio, .pAlianzaFrase, .pProductoEncabezado{
+    font-size: 1.7em;
+    margin: 0px auto
+  }
+  .pAlianza, .pProducto{
+    font-size: 1.5em;
+    margin: 0px auto
+  }
+  input[type=text], select, input[type=email],textarea {
+    width: 100%;
+    padding: 24px;
+    font-size: 1.2em;
+  }
+  label {
+    width: 100%;
+    padding: 24px 24px 24px 0;
+    font-size: 1.2em;
+  }
+  span, input[type=submit],input[type=reset], input[type=button] {
+    font-size: 1.2em;
+  }
+  .col-25 {
+    float: left;
+    width: 27%;
+    margin-top: 6px;
+  }
+  .col-75 {
+    float: left;
+    width: 73%;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (min-width:1010px){
+  .menu-toggle{
+      display: none;
+  } 
+  .site-nav{
+      height: auto;
+      position: relative;
+      top: 4px;
+      background: transparent;
+      float: right;
+      margin-right: 10px;
+      clip-path: initial;
+  } 
+  .site-nav li{
+      display: inline-block;
+      border: none;
+  }
+  .site-nav a{
+      padding: 0;
+      margin-left: 1.7em;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus{
+      background: transparent;
+  }
+  .presentacion{
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .fotoInicial{
+    width: 28em;
+    height: auto;
+  }
+  
+  .contactoEncabezado{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formulario{
+    width: 65%;
+  }
+  input[type=text], select, input[type=email],textarea, label, 
+  span, input[type=submit],input[type=reset], input[type=button] {
+    font-size: 1.5em;
+  }
+  .nosotrosEncabezado{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .imgEquipo{ 
+    width: auto;
+  }
+  .pNosotros, .pVisitanos, .pContacto{
+    font-size: 1.4em;
+    width: 850px;
+    margin: 0px auto;
+  }
+  hr{
+    margin: 0px 14%;
+  }
+  iframe{
+    width: 560px;
+    height: 315px;
+  }
+  #col-1{
+    width: 50%;
+  }
+}
+
+
